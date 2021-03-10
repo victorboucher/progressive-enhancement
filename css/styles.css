@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'VT323', monospace;
+  margin: 0;
+}
+
+html {
+  color: #fafafa;
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: underline;
+  color: #e8505b;
+  font-size: 24px;
+  word-wrap: break-word;
+}
+
+svg {
+  width: 300px;
+  margin: 40px auto 12px;
+  display: block;
+}
+
+.robot {
+  animation: floating 1s ease-in-out infinite alternate;
+}
+
+.gear {
+  top: 100px;
+  width: 800px;
+  position: fixed;
+  animation: spinning 15s linear infinite;
+  z-index: -2;
+}
+
+.robot-eyes {
+  animation: eyeblink 8s linear infinite;
+}
+
+.gear:nth-of-type(1) {
+  left: -420px;
+}
+
+.gear:nth-of-type(2) {
+  right: -420px;
+}
+
+@keyframes spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes floating {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(15px);
+  }
+}
+
+@keyframes eyeblink {
+  0% {
+    fill: #263238;
+  }
+  3% {
+    fill: #fff;
+  }
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main section {
+  width: 90%;
+  max-width: 1440px;
+  padding: 48px;
+  background: #263238;
+  border-radius: 30px;
+  box-shadow: 0px 0px 30px rgba(0,0,0, 0.6);
+}
+
+main p {
+  max-width: 800px;
+  margin: 24px auto 0;
+  font-size: 20px;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+main img {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 80px;
+}
+
+h2 {
+  margin-top: 64px;
+  text-align: center;
+  font-size: 40px;
+}
+
+footer {
+  background: #263238;
+  margin-top: 64px;
+  padding: 56px 0;
+}
+
+footer h2 {
+  font-size: 48px;
+  text-align: center;
+}
+
+.cls-1 {
+  fill: #e8505b;
+}
+
+.cls-2,
+.cls-6 {
+  fill: #263238;
+}
+
+.cls-3 {
+  fill: #fafafa;
+}
+
+.cls-4 {
+  opacity: 0.4;
+}
+
+.cls-5 {
+  fill: #fff;
+}
+
+.cls-6 {
+  font-size: 151.41px;
+  font-family: VT323-Regular, VT323;
+}
+
+.cls-7 {
+  font-size: 151.41px;
+  font-family: VT323-Regular, VT323;
+  fill: #fafafa;
+}
