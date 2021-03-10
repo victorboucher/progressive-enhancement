@@ -79,18 +79,25 @@ main {
   justify-content: center;
 }
 
-main section {
+section {
   width: 90%;
-  max-width: 1440px;
-  padding: 48px;
+  max-width: 1000px;
+  padding: 48px 48px 6px;
   background: #263238;
   border-radius: 30px;
   box-shadow: 0px 0px 30px rgba(0,0,0, 0.6);
 }
 
+article {
+  margin: 48px 0;
+  padding: 24px 0 24px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 30px rgba(0,0,0, 0.25);
+}
+
 main p {
   max-width: 800px;
-  margin: 24px auto 0;
+  margin: 0 auto;
   font-size: 20px;
   font-family: 'Titillium Web', sans-serif;
 }
@@ -105,12 +112,16 @@ main img {
 h1 {
   text-align: center;
   font-size: 80px;
+  text-decoration: underline;
+  text-decoration-color: #e8505b;
 }
 
 h2 {
-  margin-top: 64px;
+  margin-bottom: 24px;
   text-align: center;
   font-size: 40px;
+  text-decoration: underline;
+  text-decoration-color: #e8505b;
 }
 
 footer {
